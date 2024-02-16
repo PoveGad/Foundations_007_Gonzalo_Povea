@@ -1,3 +1,29 @@
-Unity Version: 2020.3.12f
+# XR Bootcamp Git Introduction
 
-Instructions here: https://www.notion.so/xrbootcamp/GitHub-for-Foundations-Setup-Guide-Step-by-step-d8ec68f2cf974958bd0bcc007e0d6a51
+A simple project to prepare you to use Git. This Readme file will serve as the first file you commit to the Github Repo.
+
+## Table of Contents
+
+- [About](#about)
+- [Todo](#todo)
+
+## About
+
+Q: What is your name?
+
+A: 
+
+Q: Where are you from?
+
+A: 
+
+Q: What are you hoping to learn from this course?
+
+A: 
+
+
+
+## Todo
+
+1) Commit this Readme to the repo via Command-line interface.
+2) Update this Reame with answers in the [About](#about) section.
