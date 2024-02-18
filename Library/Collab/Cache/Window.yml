@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - .collabignore
+    - Assets/ExampleAssets/Materials/ConstructionLight_Mat.mat
+    - Assets/ExampleAssets/Materials/ConstructionLight_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat
+    - Assets/ExampleAssets/Materials/DryWallPainted_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/DryWall_Mat.mat
+    - Assets/ExampleAssets/Materials/DryWall_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Ground_Mat.mat
+    - Assets/ExampleAssets/Materials/Ground_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Hammer_Mat.mat
+    - Assets/ExampleAssets/Materials/Hammer_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/HardHat_Mat.mat
+    - Assets/ExampleAssets/Materials/HardHat_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Jigsaw_Mat.mat
+    - Assets/ExampleAssets/Materials/Jigsaw_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/LightBulb_Mat.mat
+    - Assets/ExampleAssets/Materials/LightBulb_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Liquid_Mat.mat
+    - Assets/ExampleAssets/Materials/Liquid_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat
+    - Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat
+    - Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/OBS_Mat.mat
+    - Assets/ExampleAssets/Materials/OBS_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Paint1G_WAnim_Material.mat
+    - Assets/ExampleAssets/Materials/Paint1G_WAnim_Material.mat.meta
+    - Assets/ExampleAssets/Materials/PaintBrush_Mat.mat
+    - Assets/ExampleAssets/Materials/PaintBrush_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/PaintLabel_Mat.mat
+    - Assets/ExampleAssets/Materials/PaintLabel_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Black_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_Black_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Gray_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_Gray_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Ridges_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_Ridges_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Rough_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_Rough_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Transparent.mat
+    - Assets/ExampleAssets/Materials/Plastic_Transparent.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_White_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_White_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Plastic_Yellow_Mat.mat
+    - Assets/ExampleAssets/Materials/Plastic_Yellow_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Strap_Mat.mat
+    - Assets/ExampleAssets/Materials/Strap_Mat.mat.meta
+    - Assets/ExampleAssets/Materials/Stud_Mat.mat
+    - Assets/ExampleAssets/Materials/Stud_Mat.mat.meta
+    - Assets/ExampleAssets/Models/ConstructionLight_Low.fbx
+    - Assets/ExampleAssets/Models/ConstructionLight_Low.fbx.meta
+    - Assets/ExampleAssets/Models/Stud.fbx
+    - Assets/ExampleAssets/Models/Stud.fbx.meta
+    - Assets/ExampleAssets/Models/Workbench.fbx
+    - Assets/ExampleAssets/Models/Workbench.fbx.meta
+    - Assets/ExampleAssets/Models/Workbench_Low.fbx
+    - Assets/ExampleAssets/Models/Workbench_Low.fbx.meta
+    - Assets/ExampleAssets/Models/Workshop_Set.fbx
+    - Assets/ExampleAssets/Models/Workshop_Set.fbx.meta
+    - Assets/ExampleAssets/Models/brush_low.fbx
+    - Assets/ExampleAssets/Models/brush_low.fbx.meta
+    - Assets/ExampleAssets/Models/hammer_low.fbx
+    - Assets/ExampleAssets/Models/hammer_low.fbx.meta
+    - Assets/ExampleAssets/Models/jigsaw_low.fbx
+    - Assets/ExampleAssets/Models/jigsaw_low.fbx.meta
+    - Assets/ExampleAssets/Models/magneticlevel_low.fbx
+    - Assets/ExampleAssets/Models/magneticlevel_low.fbx.meta
+    - Assets/ExampleAssets/Models/paintbucket_low.fbx
+    - Assets/ExampleAssets/Models/paintbucket_low.fbx.meta
+    - Assets/ExampleAssets/Models/safetygoggles_low.fbx
+    - Assets/ExampleAssets/Models/safetygoggles_low.fbx.meta
+    - Assets/ExampleAssets/Models/safetyhat_low.fbx
+    - Assets/ExampleAssets/Models/safetyhat_low.fbx.meta
+    - Assets/ExampleAssets/Models/small_plane.fbx
+    - Assets/ExampleAssets/Models/small_plane.fbx.meta
+    - Assets/Materials/Skybox_Mat.mat
+    - Assets/Materials/Skybox_Mat.mat.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - 
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
