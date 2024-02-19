@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{71FDA030-FA7D-121A-5C16-C07E00C2115D}</ProjectGuid>
+    <ProjectGuid>{E7865CCF-5B26-1403-AA2E-6E158991829C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -785,11 +785,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{92760D0A-5CAD-C310-75F6-C579733D8DB3}</Project>
+      <Project>{3DA9B55F-0BD5-67E0-9676-442671E3E83B}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{CAF2CDC1-E580-8B43-6E56-24A342B91F92}</Project>
+      <Project>{FED75DB5-3607-00B7-307C-B2CC4FC8174D}</Project>
       <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
     </ProjectReference>
   </ItemGroup>
