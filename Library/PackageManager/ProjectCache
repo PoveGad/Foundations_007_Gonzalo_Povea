@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638436504600070574
-    m_Hash: 2522032340
+      ticks: 638443250231188790
+    m_Hash: 1548300393
   m_LockFileStatus:
     m_FilePath: C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638436504600125905
-    m_Hash: 2114459842
+      ticks: 638443250231198792
+    m_Hash: 220492067
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -894,6 +894,7 @@ m_PackageAssets:
         - 5.2.0
         - 5.2.2
         - 6.0.1-pre.1
+        - 6.0.1-pre.2
         compatible:
         - 4.0.2
         - 4.0.3
@@ -1363,6 +1364,7 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
+        - 3.2.0-pre.9
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -1377,6 +1379,7 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
+        - 3.2.0-pre.9
         verified: 3.0.8
       dependencies:
       - name: com.unity.ugui
