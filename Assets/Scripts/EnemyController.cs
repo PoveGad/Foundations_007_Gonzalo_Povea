@@ -36,7 +36,7 @@ public class EnemyController : MonoBehaviour
         if (moving && Vector3.Distance(transform.position,currentPoint.position) < trigger)
         {
             moving = false;
-        }3
+        }
         
     }
 }
