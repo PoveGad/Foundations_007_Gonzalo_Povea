@@ -7,11 +7,13 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent _agent;
-    [SerializeField] private float trigger= 0.5f;
-    [SerializeField] private Transform point1;
-    [SerializeField] private Transform point2;
+    [SerializeField] private float trigger= 0.3f;
+    [SerializeField] private Transform[] point;
+    
 
     private Transform currentPoint  ;
+
+    private int index = 0;
 
     private bool moving = false;
 
@@ -19,15 +21,13 @@ public class EnemyController : MonoBehaviour
     {
         if (!moving)
         {
+            if (index >= point.Length)
+            {
+                index = 0;
+            }
+
+            currentPoint = point[index];
             
-            if (currentPoint==point1)
-            {
-                currentPoint = point2;
-            }
-            else
-            {
-                currentPoint = point1;
-            }
             _agent.SetDestination(currentPoint.position);
             moving = true;
             
@@ -36,6 +36,7 @@ public class EnemyController : MonoBehaviour
         if (moving && Vector3.Distance(transform.position,currentPoint.position) < trigger)
         {
             moving = false;
+            index+=1;
         }
         
     }
