@@ -63,17 +63,40 @@
      <Compile Include="Assets\Plugins\Sirenix\Odin Validator\EnsureCorrectOdinVersion.cs" />
      <Compile Include="Assets\Plugins\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\Plugins\URP\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
+     <Compile Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Glow.shader" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Ubershader.shader" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\CartoonFX Free.txt" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.xml" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.xml" />
      <None Include="Assets\Plugins\Sirenix\Odin Validator\Readme.txt" />
      <None Include="Assets\Plugins\StarterAssets\Environment\Shaders\Built-in_RP\Triplanar.shader" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.xml" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\Readme Cartoon FX Remaster FREE.txt" />
      <None Include="Assets\Plugins\StarterAssets\license.txt" />
      <None Include="Assets\Plugins\Sirenix\Readme.txt" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\link.xml" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.xml" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Procedural Ring.shader" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.xml" />
+     <None Include="Assets\Plugins\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Distortion.shader" />
      <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinValidator.Editor.xml" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -764,6 +787,30 @@
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
       <Project>{b55dd7fe-0736-b700-307c-b2cc4fc8174d}</Project>
       <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{34c67718-978f-9418-f76e-6af18a68b9f6}</Project>
+      <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{6f477435-3c53-c1c3-3c63-2d902a51aed6}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{7c7db7f9-2fbc-5e77-92a7-f8d155038283}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{ae959ba3-99fa-e10e-7a4f-8af1993d36a9}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{0acf1817-519b-48a7-826e-6bd46ccf7eff}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{93a1235d-7943-9efe-e2a6-69b9c55bea45}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

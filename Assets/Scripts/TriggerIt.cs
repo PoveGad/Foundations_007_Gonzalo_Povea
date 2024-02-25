@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class TriggerIt : MonoBehaviour
 {
+    [SerializeField] private GameObject UI;
+    [SerializeField] private ParticleSystem _particleSystem;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player has achieve goal");
+            UI.SetActive(true);
+            _particleSystem.Play();
         }
     }
 }
