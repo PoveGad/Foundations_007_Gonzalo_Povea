@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638444243901302191
-    m_Hash: 1678334151
+      ticks: 638447556882295810
+    m_Hash: 960676187
   m_LockFileStatus:
     m_FilePath: C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638444243901402211
-    m_Hash: 456771653
+      ticks: 638447556882305806
+    m_Hash: 3706257315
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -429,6 +429,7 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
+        - 3.0.28
         compatible:
         - 1.0.2
         - 1.0.6
@@ -471,6 +472,7 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
+        - 3.0.28
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
