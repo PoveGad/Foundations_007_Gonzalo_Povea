@@ -54,15 +54,16 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Scripts\TriggerIt.cs" />
+     <Compile Include="Assets\Scripts\FallingCube.cs" />
      <Compile Include="Assets\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Scripts\DoorInteractor.cs" />
      <Compile Include="Assets\Scripts\WinDetection.cs" />
      <Compile Include="Assets\Scripts\FallDetection.cs" />
      <Compile Include="Assets\Scripts\Crounch.cs" />
      <Compile Include="Assets\Scripts\RotateObject.cs" />
+     <Compile Include="Assets\Scripts\TRiggerit_OnlyLog.cs" />
      <Compile Include="Assets\Scripts\MoveLeftRight.cs" />
      <Compile Include="Assets\Scripts\DoorTrigger.cs" />
-     <Compile Include="Assets\Scripts\FallingCube.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -681,11 +682,17 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Recorder.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -768,39 +775,42 @@
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{5fb5a93d-d50b-e067-9676-442671e3e83b}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
-      <Project>{b55dd7fe-0736-b700-307c-b2cc4fc8174d}</Project>
-      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{34c67718-978f-9418-f76e-6af18a68b9f6}</Project>
-      <Name>CFXRRuntime</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXREditor.csproj">
-      <Project>{6f477435-3c53-c1c3-3c63-2d902a51aed6}</Project>
-      <Name>CFXREditor</Name>
-    </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
       <Project>{7c7db7f9-2fbc-5e77-92a7-f8d155038283}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{ae959ba3-99fa-e10e-7a4f-8af1993d36a9}</Project>
-      <Name>CFXRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
       <Project>{0acf1817-519b-48a7-826e-6bd46ccf7eff}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{6f477435-3c53-c1c3-3c63-2d902a51aed6}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{ae959ba3-99fa-e10e-7a4f-8af1993d36a9}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
+      <Project>{b55dd7fe-0736-b700-307c-b2cc4fc8174d}</Project>
+      <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
+    </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
       <Project>{93a1235d-7943-9efe-e2a6-69b9c55bea45}</Project>
       <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{34c67718-978f-9418-f76e-6af18a68b9f6}</Project>
+      <Name>CFXRRuntime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
