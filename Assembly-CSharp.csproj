@@ -52,18 +52,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Teleport.cs" />
-     <Compile Include="Assets\Scripts\TriggerIt.cs" />
-     <Compile Include="Assets\Scripts\FallingCube.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
-     <Compile Include="Assets\Scripts\DoorInteractor.cs" />
-     <Compile Include="Assets\Scripts\WinDetection.cs" />
-     <Compile Include="Assets\Scripts\FallDetection.cs" />
-     <Compile Include="Assets\Scripts\Crounch.cs" />
-     <Compile Include="Assets\Scripts\RotateObject.cs" />
-     <Compile Include="Assets\Scripts\TRiggerit_OnlyLog.cs" />
-     <Compile Include="Assets\Scripts\MoveLeftRight.cs" />
-     <Compile Include="Assets\Scripts\DoorTrigger.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week1\Teleport.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week2\TriggerIt.cs" />
+     <Compile Include="Assets\Scripts\Creature.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week2\FallingCube.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\Door\DoorInteractor.cs" />
+     <Compile Include="Assets\Scripts\Enemy\PatrolRoute.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week1\WinDetection.cs" />
+     <Compile Include="Assets\Scripts\Player\FallDetection.cs" />
+     <Compile Include="Assets\Scripts\Player\Crounch.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week1\RotateObject.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week2\TRiggerit_OnlyLog.cs" />
+     <Compile Include="Assets\Scripts\SoundEmitter.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Grab.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week1\MoveLeftRight.cs" />
+     <Compile Include="Assets\Scripts\Door\DoorTrigger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
