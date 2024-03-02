@@ -8,6 +8,7 @@ public class Creature : MonoBehaviour
     {
         player=0,
         Enemy=1,
+        Mine=2,
     }
     public Transform head;
     public Team team;
