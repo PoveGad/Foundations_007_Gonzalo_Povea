@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3557317071197579947}
   - component: {fileID: 3557317071197579946}
   - component: {fileID: 3557317071197579945}
+  - component: {fileID: 1196842119}
+  - component: {fileID: 1196842120}
   m_Layer: 0
   m_Name: Robot_Enemy
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3557317071197579949}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.041924, y: 1, z: -8.61}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
@@ -71,8 +73,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _agent: {fileID: 3557317071197579951}
-  _trigger: 0.3
+  _trigger: 1
   _patrolRoute: {fileID: 0}
+  _fov: {fileID: 1196842119}
+  _state: 0
+  _WaitTime: 2
 --- !u!114 &3557317071197579947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +120,40 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1.02, z: 0}
+--- !u!114 &1196842119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3557317071197579949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8cf587aa4c41d4585f280c8d94d889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _giszmoColor: {r: 1, g: 0, b: 0, a: 1}
+  _viewRadius: 2.82
+  _viewAngle: 31.28
+  _creature: {fileID: 1196842120}
+  _BlockingLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  visibleObjects: []
+--- !u!114 &1196842120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3557317071197579949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721f778e8da8abe40aaf986683685b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 414168625212800800}
+  team: 1
 --- !u!1001 &3557317071361263113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,5 +230,10 @@ PrefabInstance:
 --- !u!4 &3950950423289307618 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48ed796f3de149c4ab024456d2036804, type: 3}
+  m_PrefabInstance: {fileID: 3557317071361263113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &414168625212800800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5412960421705385687, guid: 48ed796f3de149c4ab024456d2036804, type: 3}
   m_PrefabInstance: {fileID: 3557317071361263113}
   m_PrefabAsset: {fileID: 0}
