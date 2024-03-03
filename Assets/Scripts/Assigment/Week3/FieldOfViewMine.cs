@@ -13,6 +13,7 @@ public class FieldOfViewMine : MonoBehaviour
    [SerializeField] private Creature _creature;
    [SerializeField] private LayerMask _BlockingLayers;
    [SerializeField] private float DistanceToExplote = 1.5f;
+   [SerializeField] private Rigidbody[] Rigidbodies;
    public List<Transform> visibleObjects;
 
    [SerializeField] private ParticleSystem ExploteAnimation;
@@ -55,7 +56,11 @@ public class FieldOfViewMine : MonoBehaviour
    private void ExploteRobot(GameObject robot)
    {
       Instantiate(ExploteAnimation, robot.transform.position, quaternion.identity);
-      robot.SetActive(false);
+      robot.GetComponent<EnemyController>().enabled = false;
+      foreach (Rigidbody bodypart in Rigidbodies)
+      {
+         bodypart.isKinematic = false;
+      }
       gameObject.SetActive(false);
    }
 
