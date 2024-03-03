@@ -7,11 +7,13 @@ TagManager:
   - CinemachineTarget
   - Grabbable
   - GameScenary
+  - FxTemporaire
+  - Box
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Box
   - Water
   - UI
   - 
