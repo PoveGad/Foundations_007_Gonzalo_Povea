@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class EnemyController : MonoBehaviour
@@ -14,21 +15,27 @@ public class EnemyController : MonoBehaviour
         GettingHelp=3,
     }
     [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private Animator _animator;
     [SerializeField] private float _trigger= 0.3f;
     [SerializeField] private PatrolRoute _patrolRoute;
     [SerializeField] private FieldOfView _fov;
     [SerializeField] public EnemyState _state = EnemyState.Patrol;
     [SerializeField] private float _WaitTime = 2f;
-
     [SerializeField] private EnemyController[] OtherRobots;
 
-    private bool CheckingObject=false;
+    public UnityEvent<Transform> onPlayerFound;
+    public UnityEvent onInvestigate;
+    public UnityEvent onReturnToPatrol;
+
+    /*private bool CheckingObject=false;
     private bool SeePartner=false;
-    private bool IsOwner=false;
-    private Transform currentPoint  ;
-    private bool moving = false;
-    private int _routeIndex = 0;
+    private bool IsOwner=false;*/
     private bool _forwardsAlongPath = true;
+    private bool moving = false;
+    private bool _playerFound = false;
+
+    private Transform currentPoint  ;
+    private int _routeIndex = 0;
     private Vector3 _investigationPoint;
     private float timer;
 
@@ -38,9 +45,11 @@ public class EnemyController : MonoBehaviour
     }
     private void Update()
     {
+        _animator.SetFloat("Speed", _agent.velocity.magnitude);
+
         if (_fov.visibleObjects.Count > 0)
         {
-            InvestigatePoint(_fov.visibleObjects[0].position);
+            PlayerFound(_fov.visibleObjects[0].position);
         }
         if (_state == EnemyState.Patrol)
         {
@@ -54,10 +63,10 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                if (_state == EnemyState.GettingHelp)
+                /*if (_state == EnemyState.GettingHelp)
                 {
                     UpdateGettingHel();
-                }
+                }*/
             }
             
         }
@@ -67,25 +76,43 @@ public class EnemyController : MonoBehaviour
 
     public void InvestigatePoint(Vector3 investigatePoint)
     {
+        SetInvestigastionPoint(investigatePoint);
+        onInvestigate.Invoke();
+    }
+
+    private void SetInvestigastionPoint(Vector3 investigatePoint)
+    {
         _state = EnemyState.Investigate;
         _investigationPoint = investigatePoint;
         _agent.SetDestination(_investigationPoint);
     }
 
+    private void PlayerFound(Vector3 InvestigatePoint)
+    {
+        if(_playerFound) return;
+        _playerFound = true;
+        SetInvestigastionPoint(InvestigatePoint);
+        onPlayerFound.Invoke(_fov.creature.head);
+    }
+
     public void CheckForHelp(Transform center)
     {
+        /*
+        if(!OtherRobots[0]) return;
         if(OtherRobots[0]._state == EnemyState.GettingHelp || OtherRobots[0]._state == EnemyState.Investigate) return;
         _state = EnemyState.GettingHelp;
         _investigationPoint = center.position;
         _agent.SetDestination(_investigationPoint);
         _agent.speed = 0.1f;
         CheckingObject = true;
-        IsOwner = true;
+        IsOwner = true;*/
     }
     
     private void UpdateGettingHel()
     {
+        /*
         timer += Time.deltaTime;
+        if(!OtherRobots[0]) return;
         if (CheckingObject)
         {
             Vector3 direction = (_investigationPoint - transform.position).normalized;
@@ -115,12 +142,12 @@ public class EnemyController : MonoBehaviour
         if (timer > _WaitTime && IsOwner && SeePartner)
         {
             SetRobotsToSeeTheObjective();
-        }
+        }*/
         
     }
 
     private void SetRobotsToSeeTheObjective()
-    {
+    {/*
         _agent.speed = 2f;
         OtherRobots[0]._agent.speed = 2f;
         OtherRobots[0].SeePartner = false;
@@ -129,17 +156,19 @@ public class EnemyController : MonoBehaviour
         timer = 0;
         InvestigatePoint(_investigationPoint);
         OtherRobots[0].InvestigatePoint(_investigationPoint);
+        */
     }
 
     private void SetRobotsToSeeEachOther()
     {
+        /*
         SeePartner = true;
         OtherRobots[0].SeePartner = true;
         OtherRobots[0]._state = EnemyState.GettingHelp; 
         OtherRobots[0]._agent.SetDestination(_investigationPoint);
         OtherRobots[0]._agent.speed = 0.1f;
         _agent.speed = 0.1f;
-        timer = 0;
+        timer = 0;*/
     }
 
     private void UpdateInvestigate()
@@ -159,6 +188,7 @@ public class EnemyController : MonoBehaviour
         _state = EnemyState.Patrol;
         timer = 0f;
         moving = false;
+        onReturnToPatrol.Invoke();
     }
 
     private void UpdatePatrol()

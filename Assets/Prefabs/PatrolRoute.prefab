@@ -45,8 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _patrolRouteColor: {r: 0.38375115, g: 1, b: 0, a: 1}
   patrolType: 0
-  route:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  route: []

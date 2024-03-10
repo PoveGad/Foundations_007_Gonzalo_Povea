@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Enemy\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\Door\DoorInteractor.cs" />
      <Compile Include="Assets\Scripts\Enemy\PatrolRoute.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\WinDetection.cs" />
      <Compile Include="Assets\Scripts\Player\FallDetection.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\Grab_2.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Scripts\SoundEmitter.cs" />
      <Compile Include="Assets\Scripts\Player\Grab.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\MoveLeftRight.cs" />
+     <Compile Include="Assets\Scripts\GoalTrigger.cs" />
      <Compile Include="Assets\Scripts\Door\DoorTrigger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

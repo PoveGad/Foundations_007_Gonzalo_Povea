@@ -9,7 +9,7 @@ public class FieldOfView : MonoBehaviour
    [SerializeField] private Color _giszmoColor = Color.red;
    [SerializeField] private float _viewRadius = 6f;
    [SerializeField] private float _viewAngle = 30f;
-   [SerializeField] private Creature _creature;
+   public Creature creature;
    [SerializeField] private LayerMask _BlockingLayers;
    public List<Transform> visibleObjects;
 
@@ -20,13 +20,13 @@ public class FieldOfView : MonoBehaviour
       foreach (Collider target in targetsInViewrRadius)
       {
          if(!target.TryGetComponent(out Creature targetCreature)) continue;
-         if(_creature.team == targetCreature.team)continue;
+         if(creature.team == targetCreature.team)continue;
          
          Vector3 directionTarget = (target.transform.position - transform.position).normalized;
 
          if (Vector3.Angle(transform.forward, directionTarget) < _viewAngle)
          {
-            Vector3 headPos = _creature.head.position;
+            Vector3 headPos = creature.head.position;
             Vector3 targetHeadPos = targetCreature.head.position;
             Vector3 dirToTargetHead = (targetHeadPos - headPos).normalized;
             float disToTargetHead = Vector3.Distance(headPos, targetHeadPos);

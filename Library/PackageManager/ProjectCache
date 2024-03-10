@@ -108,6 +108,7 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         - 3.0.0-pre.3
         - 3.0.0-pre.4
         - 3.0.0-pre.5
@@ -161,6 +162,7 @@ m_PackageAssets:
         - 2.9.4
         - 2.9.5
         - 2.9.7
+        - 2.10.0
         verified: 2.6.17
       dependencies: []
       resolvedDependencies: []
@@ -300,6 +302,7 @@ m_PackageAssets:
         - 2.1.0-preview.6
         - 2.1.0
         - 2.2.0
+        - 2.3.1
         compatible:
         - 1.5.7
         - 1.6.0
