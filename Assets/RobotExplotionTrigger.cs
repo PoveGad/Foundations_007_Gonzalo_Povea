@@ -25,6 +25,8 @@ public class RobotExplotionTrigger : MonoBehaviour
                 Destroy(Barrel);
                 
             }
+            Destroy(gameObject);
         }
+        
     }
 }
