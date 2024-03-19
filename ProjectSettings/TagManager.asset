@@ -9,6 +9,7 @@ TagManager:
   - GameScenary
   - FxTemporaire
   - Box
+  - KeyCard
   layers:
   - Default
   - TransparentFX

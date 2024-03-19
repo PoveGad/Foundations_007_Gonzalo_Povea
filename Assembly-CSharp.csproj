@@ -62,14 +62,16 @@
      <Compile Include="Assets\Scripts\RobotExplotionTrigger.cs" />
      <Compile Include="Assets\Scripts\SoundEmitter2.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\DoorManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\FieldOfViewMine.cs" />
      <Compile Include="Assets\Scripts\Enemy\FieldOfView.cs" />
+     <Compile Include="Assets\DroneController.cs" />
      <Compile Include="Assets\Scripts\Door\DoorInteractor.cs" />
      <Compile Include="Assets\Scripts\Enemy\PatrolRoute.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\WinDetection.cs" />
      <Compile Include="Assets\Scripts\Player\FallDetection.cs" />
-     <Compile Include="Assets\Door_Identification.cs" />
+     <Compile Include="Assets\Scripts\Door_Identification.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\Grab_2.cs" />
      <Compile Include="Assets\Scripts\Player\Crounch.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\RotateObject.cs" />
@@ -80,7 +82,10 @@
      <Compile Include="Assets\Scripts\Assigment\Week1\MoveLeftRight.cs" />
      <Compile Include="Assets\Scripts\GoalTrigger.cs" />
      <Compile Include="Assets\Scripts\Door\DoorTrigger.cs" />
-     <Compile Include="Assets\DoorManager.cs" />
+     <Compile Include="Assets\XRTagLimitedSocketInteractor.cs" />
+     <Compile Include="Assets\Scripts\XRCustomControllerInteractor.cs" />
+     <Compile Include="Assets\Scripts\Door\DoorKeyCardTrigger.cs" />
+     <Compile Include="Assets\Scripts\Door\KeyCard.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -327,14 +332,8 @@
  <Reference Include="Sirenix.Reflection.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Reflection.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Sirenix.OdinValidator.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Sirenix.OdinInspector.Attributes">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
@@ -342,11 +341,17 @@
  <Reference Include="Sirenix.Serialization.Config">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
  </Reference>
- <Reference Include="Sirenix.Utilities">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
- </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
  </Reference>
  <Reference Include="Sirenix.Serialization">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
@@ -708,38 +713,14 @@
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Recorder.Base">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="Unity.ProBuilder">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -756,11 +737,8 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
@@ -771,14 +749,65 @@
  <Reference Include="com.unity.cinemachine.editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Oculus.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Interaction.Toolkit">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
@@ -786,14 +815,20 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Oculus">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Recorder">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -805,21 +840,21 @@
       <Project>{7c7db7f9-2fbc-5e77-92a7-f8d155038283}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{0acf1817-519b-48a7-826e-6bd46ccf7eff}</Project>
-      <Name>KinoBloom.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
       <Project>{6f477435-3c53-c1c3-3c63-2d902a51aed6}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
-    <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{ae959ba3-99fa-e10e-7a4f-8af1993d36a9}</Project>
-      <Name>CFXRDemo</Name>
-    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.Modules.UnityMathematics.csproj">
       <Project>{b55dd7fe-0736-b700-307c-b2cc4fc8174d}</Project>
       <Name>Sirenix.OdinInspector.Modules.UnityMathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{374eb809-e081-d160-03c4-fe4f65f4936c}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{864cb4fe-c4c6-2632-363d-0f71e9da4af3}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
       <Project>{93a1235d-7943-9efe-e2a6-69b9c55bea45}</Project>
@@ -828,6 +863,22 @@
     <ProjectReference Include="CFXRRuntime.csproj">
       <Project>{34c67718-978f-9418-f76e-6af18a68b9f6}</Project>
       <Name>CFXRRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{0acf1817-519b-48a7-826e-6bd46ccf7eff}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{ff785cc1-a4ea-cc5a-74dd-df134351094b}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{ae959ba3-99fa-e10e-7a4f-8af1993d36a9}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{4dd0b62f-aab0-f4aa-cc11-6b3162605451}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

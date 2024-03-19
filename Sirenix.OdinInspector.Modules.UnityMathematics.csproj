@@ -289,20 +289,8 @@
  <Reference Include="Sirenix.Reflection.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Reflection.Editor.dll</HintPath>
  </Reference>
- <Reference Include="StarterAssetsPackageChecker">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/StarterAssets/Editor/PackageChecker/StarterAssetsPackageChecker.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Sirenix.OdinValidator.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Sirenix.OdinInspector.Attributes">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
@@ -313,14 +301,26 @@
  <Reference Include="Sirenix.Serialization.Config">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
  </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="StarterAssetsPackageChecker">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/StarterAssets/Editor/PackageChecker/StarterAssetsPackageChecker.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Antlr3.Runtime">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Sirenix.Utilities">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.render-pipelines.core@10.5.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Sirenix.Serialization">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
@@ -688,11 +688,11 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
