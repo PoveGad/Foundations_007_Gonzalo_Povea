@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MoveLeftRight : MonoBehaviour
 {
-    public Vector3 pointA;
-    public Vector3 pointB;
+    public Transform pointA;
+    public Transform pointB;
     public float velocity = 1.0f;
     private float time;
 
@@ -14,6 +14,6 @@ public class MoveLeftRight : MonoBehaviour
         
         time += Time.deltaTime * velocity;
         
-        transform.position = Vector3.Lerp(pointA, pointB, Mathf.PingPong(time, 1));
+        transform.position = Vector3.Lerp(pointA.position, pointB.position, Mathf.PingPong(time, 1));
     }
 }

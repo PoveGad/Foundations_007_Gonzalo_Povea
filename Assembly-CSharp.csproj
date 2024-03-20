@@ -88,6 +88,12 @@
      <Compile Include="Assets\Scripts\Assigment\Week1\MoveLeftRight.cs" />
      <Compile Include="Assets\Scripts\GoalTrigger.cs" />
      <Compile Include="Assets\Scripts\Door\DoorTrigger.cs" />
+     <Compile Include="Assets\LaunchProjectile.cs" />
+     <Compile Include="Assets\TargetHit.cs" />
+     <Compile Include="Assets\BaseTarget.cs" />
+     <Compile Include="Assets\GameTwoManager.cs" />
+     <Compile Include="Assets\CenterTarget.cs" />
+     <Compile Include="Assets\ResetGame.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
