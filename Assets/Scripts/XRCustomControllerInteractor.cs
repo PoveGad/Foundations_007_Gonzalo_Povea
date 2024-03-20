@@ -11,7 +11,7 @@ public class XRCustomControllerInteractor : MonoBehaviour
 
     private void Start()
     {
-        _controller.GetComponent<XRBaseControllerInteractor>();
+        _controller = GetComponent<XRBaseControllerInteractor>();
         Assert.IsNotNull(_controller, "There is no XRBaseCOntrollerInteractor aasigne to this hand" + gameObject.name);
         _controller.selectEntered.AddListener(ParentInteractable);
         _controller.selectExited.AddListener(UnParent);
