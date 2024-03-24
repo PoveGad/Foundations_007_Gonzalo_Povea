@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3370024954300461893}
-  m_Layer: 0
+  - component: {fileID: 5461668465951364371}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:RingFinger2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,20 @@ Transform:
   m_Father: {fileID: 5756252463470680346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5461668465951364371
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503243351098078892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.002}
 --- !u!1 &732107967517007583
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +55,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3136596811322660712}
-  m_Layer: 0
+  - component: {fileID: 4458871601494875362}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:PinkyFinger2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +78,20 @@ Transform:
   m_Father: {fileID: 7623216166630293927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4458871601494875362
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732107967517007583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.013
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.002}
 --- !u!1 &829344528524166513
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +101,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6077786219347902750}
-  m_Layer: 0
+  - component: {fileID: 725274720888164967}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:IndexFinger3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,6 +124,20 @@ Transform:
   m_Father: {fileID: 2917376607660782065}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &725274720888164967
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829344528524166513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.01}
 --- !u!1 &896759110931234147
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5986564822894482270}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:IndexFinger4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +177,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7559889987431585367}
-  m_Layer: 0
+  - component: {fileID: 6975372425184251360}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:ThumbFinger2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,6 +200,20 @@ Transform:
   m_Father: {fileID: 4565054912235840055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6975372425184251360
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167902238827225324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.01, z: 0.004}
 --- !u!1 &1208563675203343415
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +223,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3010304639603465329}
-  m_Layer: 0
+  - component: {fileID: 3432274954929648514}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:IndexFinger1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,6 +246,20 @@ Transform:
   m_Father: {fileID: 4384644638721899228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3432274954929648514
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208563675203343415}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.08
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.01}
 --- !u!1 &1355252027539117213
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +269,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7650481175936312308}
-  m_Layer: 0
+  - component: {fileID: 15976500358091804}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:MiddleFinger2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,6 +292,20 @@ Transform:
   m_Father: {fileID: 7387551050822817923}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &15976500358091804
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355252027539117213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.005}
 --- !u!1 &1912605050648735569
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8923483075330509845}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HandOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5770646567937247894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:ThumbFinger4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3227416763298984758}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:RingFinger4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +407,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2917376607660782065}
-  m_Layer: 0
+  - component: {fileID: 8437529520748034516}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:IndexFinger2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,6 +430,20 @@ Transform:
   m_Father: {fileID: 3010304639603465329}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8437529520748034516
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756250999666940271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.008}
 --- !u!1 &3046156894781514951
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5399224857579169348}
   - component: {fileID: 7345787861000907878}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HandMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +552,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4565054912235840055}
-  m_Layer: 0
+  - component: {fileID: 7179883030678344633}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:ThumbFinger1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,6 +575,20 @@ Transform:
   m_Father: {fileID: 4384644638721899228}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7179883030678344633
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778842560140162932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.08
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.01, z: 0.004}
 --- !u!1 &4016463407099692670
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5046500879017545405}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:PinkyFinger4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +628,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7623216166630293927}
-  m_Layer: 0
+  - component: {fileID: 3957908221074639803}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:PinkyFinger1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,6 +651,20 @@ Transform:
   m_Father: {fileID: 4384644638721899228}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3957908221074639803
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190014838018888763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014
+  m_Height: 0.08
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.003}
 --- !u!1 &4285568120608280183
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +674,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5756252463470680346}
-  m_Layer: 0
+  - component: {fileID: 4447208863416039806}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:RingFinger1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,6 +697,20 @@ Transform:
   m_Father: {fileID: 4384644638721899228}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4447208863416039806
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4285568120608280183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.012
+  m_Height: 0.08
+  m_Direction: 0
+  m_Center: {x: 0.024, y: -0.003, z: 0.002}
 --- !u!1 &5028882977797992944
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5657082707777694538}
   - component: {fileID: 1756916315331096880}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Left - Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +771,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8422131398555867647}
-  m_Layer: 0
+  - component: {fileID: 4089870578969412325}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:ThumbFinger3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,6 +794,20 @@ Transform:
   m_Father: {fileID: 7559889987431585367}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4089870578969412325
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5422236755339450680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.03
+  m_Direction: 0
+  m_Center: {x: 0.017, y: -0.01, z: 0.004}
 --- !u!1 &5813213123538481010
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +817,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8724795755199282028}
-  m_Layer: 0
+  - component: {fileID: 3357586395268071474}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:PinkyFinger3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,6 +840,20 @@ Transform:
   m_Father: {fileID: 3136596811322660712}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3357586395268071474
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5813213123538481010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.04
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.005}
 --- !u!1 &6416666834009979996
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4384644638721899228}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:Wrist_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +898,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7387551050822817923}
-  m_Layer: 0
+  - component: {fileID: 7981941773893602265}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:MiddleFinger1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,6 +921,20 @@ Transform:
   m_Father: {fileID: 4384644638721899228}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7981941773893602265
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940165774890373132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.014
+  m_Height: 0.08
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.005}
 --- !u!1 &7225895401320923607
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2548596373196946623}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:MiddleFinger4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +974,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7545041443910132025}
-  m_Layer: 0
+  - component: {fileID: 6416422559386820164}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:RingFinger3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,6 +997,20 @@ Transform:
   m_Father: {fileID: 3370024954300461893}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6416422559386820164
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511711742164997300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.04
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.005}
 --- !u!1 &7665399023842031039
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +1020,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3472038794086494191}
-  m_Layer: 0
+  - component: {fileID: 4068275238535317445}
+  m_Layer: 11
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,6 +1043,19 @@ Transform:
   m_Father: {fileID: 8923483075330509845}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4068275238535317445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665399023842031039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.06, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0.075}
 --- !u!1 &8682302790560714565
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +1065,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 623560487393767932}
-  m_Layer: 0
+  - component: {fileID: 2229327732784230534}
+  m_Layer: 11
   m_Name: Robot_XRB01_001_0011:MiddleFinger3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,3 +1088,17 @@ Transform:
   m_Father: {fileID: 7650481175936312308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2229327732784230534
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8682302790560714565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.05
+  m_Direction: 0
+  m_Center: {x: 0.02, y: -0.003, z: 0.008}
