@@ -104,6 +104,9 @@
      <Compile Include="Assets\AxeAnimation.cs" />
      <Compile Include="Assets\AxeDetected.cs" />
      <Compile Include="Assets\ManagerWeek6.cs" />
+     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
+     <Compile Include="Assets\StartFireOrStopFire.cs" />
+     <Compile Include="Assets\Flammable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
