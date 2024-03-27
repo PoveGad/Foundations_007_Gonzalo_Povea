@@ -12,6 +12,7 @@ TagManager:
   - KeyCard
   - Cylinder
   - Can
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Pistol
   - Hand
   - Teleport
-  - PostProcessing
+  - Button
   - 
   - 
   - 
