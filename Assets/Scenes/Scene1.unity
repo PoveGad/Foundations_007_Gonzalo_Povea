@@ -22775,9 +22775,9 @@ ConfigurableJoint:
   m_AngularZMotion: 0
   m_LinearLimitSpring:
     spring: 0
-    damper: 0
+    damper: 1
   m_LinearLimit:
-    limit: 0.003
+    limit: 0.001
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
@@ -22811,8 +22811,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 75
-    positionDamper: 10
+    positionSpring: 5000
+    positionDamper: 20
     maximumForce: 3.4028233e+38
   m_ZDrive:
     serializedVersion: 3
@@ -112236,7 +112236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7821870495240182584, guid: 1943d051d83fa6e43b0e5044722bb43c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.21
+      value: 5.963
       objectReference: {fileID: 0}
     - target: {fileID: 7821870495240182584, guid: 1943d051d83fa6e43b0e5044722bb43c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -112244,7 +112244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7821870495240182584, guid: 1943d051d83fa6e43b0e5044722bb43c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.13
+      value: -2.084
       objectReference: {fileID: 0}
     - target: {fileID: 7821870495240182584, guid: 1943d051d83fa6e43b0e5044722bb43c, type: 3}
       propertyPath: m_LocalRotation.w
