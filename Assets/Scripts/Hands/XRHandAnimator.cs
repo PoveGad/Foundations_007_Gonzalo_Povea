@@ -20,6 +20,15 @@ public class XRHandAnimator : MonoBehaviour
         _controller.activateAction.action.canceled += FistReleased;
     }
 
+    private void OnDestroy()
+    {
+        _controller.selectAction.action.started -= Point;
+        _controller.selectAction.action.canceled -= PointReleased;
+
+        _controller.activateAction.action.started -= Fist;
+        _controller.activateAction.action.canceled -= FistReleased;
+    }
+
     private void FistReleased(InputAction.CallbackContext obj)
     {
         

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638471138688745680
-    m_Hash: 3886771708
+      ticks: 638471810824104927
+    m_Hash: 1808079273
   m_LockFileStatus:
     m_FilePath: C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638471138688830787
-    m_Hash: 1083981072
+      ticks: 638471810824114921
+    m_Hash: 4115863156
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -1003,6 +1003,7 @@ m_PackageAssets:
         - 5.2.2
         - 6.0.1-pre.1
         - 6.0.1-pre.2
+        - 6.0.1
         compatible:
         - 4.0.2
         - 4.0.3

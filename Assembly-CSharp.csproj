@@ -57,7 +57,7 @@
      <Compile Include="Assets\Scripts\Assigment\Week2\TriggerIt.cs" />
      <Compile Include="Assets\Scripts\Door\DoorKeyCardTrigger.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\AtachMine.cs" />
-     <Compile Include="Assets\LookUp.cs" />
+     <Compile Include="Assets\Scripts\LookUp.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\BoxGrabber.cs" />
      <Compile Include="Assets\Scripts\XR\XrMinimapRotator.cs" />
      <Compile Include="Assets\Scripts\Creature.cs" />
@@ -68,19 +68,20 @@
      <Compile Include="Assets\Scripts\SoundEmitter2.cs" />
      <Compile Include="Assets\Scripts\XRCustomControllerInteractor.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
-     <Compile Include="Assets\ManagerWeek6.cs" />
+     <Compile Include="Assets\Scripts\ManagerWeek6.cs" />
      <Compile Include="Assets\Scripts\LaunchProjectile.cs" />
-     <Compile Include="Assets\SmoothTeleport.cs" />
+     <Compile Include="Assets\Scripts\SmoothTeleport.cs" />
      <Compile Include="Assets\Scripts\FallDetectionAssigment.cs" />
-     <Compile Include="Assets\SmoothTeleport2.cs" />
+     <Compile Include="Assets\Scripts\SmoothTeleport2.cs" />
      <Compile Include="Assets\Scripts\XR\XRTagLimitedSocketInteractor.cs" />
      <Compile Include="Assets\Scripts\Hands\XRHandAnimator.cs" />
+     <Compile Include="Assets\Scripts\Gun\ShockPistol.cs" />
      <Compile Include="Assets\Scripts\DoorManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\FieldOfViewMine.cs" />
      <Compile Include="Assets\Scripts\BaseTarget.cs" />
      <Compile Include="Assets\Scripts\Enemy\FieldOfView.cs" />
      <Compile Include="Assets\Scripts\GameTwoManager.cs" />
-     <Compile Include="Assets\SmoothTeleportFInal.cs" />
+     <Compile Include="Assets\Scripts\SmoothTeleportFInal.cs" />
      <Compile Include="Assets\Scripts\DroneController.cs" />
      <Compile Include="Assets\Scripts\Door\DoorInteractor.cs" />
      <Compile Include="Assets\Scripts\Enemy\PatrolRoute.cs" />
@@ -89,31 +90,36 @@
      <Compile Include="Assets\Scripts\Assigment\Week1\WinDetection.cs" />
      <Compile Include="Assets\Scripts\Player\FallDetection.cs" />
      <Compile Include="Assets\Scripts\TinCanToss.cs" />
-     <Compile Include="Assets\StartFireOrStopFire.cs" />
-     <Compile Include="Assets\TeleportationProvider2.cs" />
+     <Compile Include="Assets\Scripts\StartFireOrStopFire.cs" />
+     <Compile Include="Assets\Scripts\TeleportationProvider2.cs" />
+     <Compile Include="Assets\Scripts\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\CenterTarget.cs" />
+     <Compile Include="Assets\Scripts\Gun\Gun.cs" />
      <Compile Include="Assets\Scripts\Door_Identification.cs" />
-     <Compile Include="Assets\AxeDetected.cs" />
+     <Compile Include="Assets\Scripts\AxeDetected.cs" />
+     <Compile Include="Assets\Scripts\HandedNess.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\Grab_2.cs" />
-     <Compile Include="Assets\SpawnObjecct.cs" />
-     <Compile Include="Assets\SpawnManager.cs" />
-     <Compile Include="Assets\CreateCube.cs" />
+     <Compile Include="Assets\Scripts\SpawnObjecct.cs" />
+     <Compile Include="Assets\Scripts\SpawnManager.cs" />
+     <Compile Include="Assets\Scripts\CreateCube.cs" />
      <Compile Include="Assets\Scripts\Player\Crounch.cs" />
      <Compile Include="Assets\Scripts\Hands\TeleportManager.cs" />
-     <Compile Include="Assets\AxeAnimation.cs" />
+     <Compile Include="Assets\Scripts\AxeAnimation.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\RotateObject.cs" />
+     <Compile Include="Assets\Scripts\Gun\AmmoClip.cs" />
+     <Compile Include="Assets\Scripts\ButtonEvent.cs" />
      <Compile Include="Assets\Scripts\TargetHit.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week2\TRiggerit_OnlyLog.cs" />
      <Compile Include="Assets\Scripts\KeyIdentificator.cs" />
      <Compile Include="Assets\Scripts\SoundEmitter.cs" />
      <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
-     <Compile Include="Assets\Flammable.cs" />
+     <Compile Include="Assets\Scripts\Flammable.cs" />
      <Compile Include="Assets\Scripts\Player\Grab.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\MoveLeftRight.cs" />
      <Compile Include="Assets\Scripts\GoalTrigger.cs" />
      <Compile Include="Assets\Scripts\Door\DoorTrigger.cs" />
-     <Compile Include="Assets\ButtonEvent.cs" />
-     <Compile Include="Assets\ScreenManager.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scifi-Gun\ReadMe.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -813,17 +819,23 @@
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Runtime">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
@@ -845,12 +857,6 @@
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/gonza/Documents/Unity/XR-BootCamp-Git/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

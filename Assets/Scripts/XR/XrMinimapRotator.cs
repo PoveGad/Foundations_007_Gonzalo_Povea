@@ -9,13 +9,25 @@ namespace XR
 
     public class XrMinimapRotator : MonoBehaviour
     {
+        [SerializeField] private Transform _leftHandTransform;
+        [SerializeField] private Transform _rightHandTransform;
         [SerializeField] private Transform _rotationReference;
 
         private Vector3 _initialRotation;
+        private HandedNess _handedNess;
 
         private void Start()
         {
             _initialRotation = transform.eulerAngles;
+            _handedNess = GetComponent<HandedNess>();
+            if (_handedNess.handed == Handed.Left)
+            {
+                _rotationReference = _rightHandTransform;
+            }
+            else
+            {
+                _rotationReference = _leftHandTransform;
+            }
         }
 
         private void Update()

@@ -13,6 +13,7 @@ TagManager:
   - Cylinder
   - Can
   - Button
+  - Ammo
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     {
         Patrol=0,
         Investigate=1,
+        Stunned = 2,
         GettingHelp=3,
     }
     [SerializeField] private NavMeshAgent _agent;
@@ -22,10 +23,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField] public EnemyState _state = EnemyState.Patrol;
     [SerializeField] private float _WaitTime = 2f;
     [SerializeField] private EnemyController[] OtherRobots;
+    [SerializeField] private float _stunnedTime = 3f;
 
     public UnityEvent<Transform> onPlayerFound;
     public UnityEvent onInvestigate;
     public UnityEvent onReturnToPatrol;
+    public UnityEvent onStunned;
+    
 
     /*private bool CheckingObject=false;
     private bool SeePartner=false;
@@ -38,6 +42,7 @@ public class EnemyController : MonoBehaviour
     private int _routeIndex = 0;
     private Vector3 _investigationPoint;
     private float timer;
+    private float _stunnedTimer = 0f;
 
     private void Start()
     {
@@ -63,13 +68,27 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                /*if (_state == EnemyState.GettingHelp)
+                if (_state == EnemyState.Stunned)
                 {
-                    UpdateGettingHel();
-                }*/
+                    _stunnedTimer += Time.deltaTime;
+                    if (_stunnedTimer >= _stunnedTime)
+                    {
+                        ReturnToPatrol();
+                        _animator.SetBool("Stunned", false);
+                    }
+                }
             }
             
         }
+    }
+
+    public void SetStunned()
+    {
+        _animator.SetBool("Stunned", true);
+        _stunnedTimer = 0f;
+        _state = EnemyState.Stunned;
+        _agent.SetDestination(transform.position);
+        onStunned.Invoke();
     }
 
     
