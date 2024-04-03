@@ -10,15 +10,26 @@ public enum TypeofGun
 }
 public class GravityGun : MonoBehaviour
 {
-    private bool grabbed= false;
+    
     [SerializeField] private Transform Barrel;
     [SerializeField] private float _maxDistance = 3f;
     [SerializeField] private TypeofGun _guntype;
-    private bool _activated = false;
     [SerializeField] private float attractionForce = 1f;
+    [SerializeField] private float radius = 0.5f;
+    [SerializeField] private GameObject _Light;
+    
+    public LayerMask attractionLayers;
+    private bool grabbed= false;
+    private Vector3 HitPoint;
+    private float currentdistance;
+    private bool _activated = false;
     private List<Rigidbody> affectedRigidbodies = new List<Rigidbody>();
 
-    private Vector3 HitPoint;
+    private void Start()
+    {
+        currentdistance = _maxDistance;
+        _Light.SetActive(false);
+    }
 
     private void Update()
     {
@@ -31,28 +42,43 @@ public class GravityGun : MonoBehaviour
     private void CastRayAtraction()
     {
         RaycastHit hit;
-        Vector3 attractPoint = Barrel.position + Barrel.forward * _maxDistance;
+        Vector3 attractPoint = Barrel.position + Barrel.forward * currentdistance;
+        Debug.DrawLine(Barrel.position, Barrel.forward * currentdistance, Color.blue); 
 
-        if (Physics.Raycast(Barrel.position, Barrel.forward, out hit, _maxDistance))
+        if (Physics.Raycast(Barrel.position, Barrel.forward, out hit, currentdistance))
         {
             Debug.DrawLine(Barrel.position,hit.point,Color.blue);
             attractPoint = hit.point;
             
         }
-        Debug.DrawLine(Barrel.position, Barrel.forward * _maxDistance, Color.blue); 
+        
+        
         HitPoint = attractPoint;
-        Collider[] objectsInRange = Physics.OverlapSphere(attractPoint, 0.5f);
-        Debug.Log(objectsInRange.Length);
+        
+        Collider[] objectsInRange = Physics.OverlapSphere(attractPoint, radius);
+        
         if (objectsInRange.Length > 0)
         {
             if (_activated)
             {
                 AttractObjects(attractPoint, objectsInRange);
+                if (_guntype == TypeofGun.Pull)
+                {
+
+                    currentdistance = Mathf.Max(1f, currentdistance - 0.008f);
+                }
+
+                if (_guntype == TypeofGun.Push)
+                {
+
+                    currentdistance += 0.008f;
+                }
             }
-            if(!_activated)
+            else
             {
                 ResetAffectedObjectsGravity();
             }
+            
         }
     }
 
@@ -60,24 +86,47 @@ public class GravityGun : MonoBehaviour
 
     void AttractObjects(Vector3 center, Collider[] objectsInRange)
     {
+        
         foreach (var obj in objectsInRange)
         {
-            Debug.Log(obj.gameObject);
+            
             Rigidbody rb = obj.gameObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 if (!affectedRigidbodies.Contains(rb))
                 {
                     rb.useGravity = false; 
-                    affectedRigidbodies.Add(rb); 
+                    affectedRigidbodies.Add(rb);
+                    
                 }
-
-                Vector3 direction = Barrel.position - rb.position;
-                Vector3 direction2 = center - rb.position;
-
-                rb.AddForce(direction.normalized * attractionForce * Time.deltaTime, ForceMode.VelocityChange);
-                rb.AddForce(direction2.normalized * attractionForce * Time.deltaTime, ForceMode.VelocityChange);
             }
+        }
+        foreach (var RB in affectedRigidbodies)
+        {
+            Vector3 direction = (Barrel.position - RB.position).normalized;
+            Vector3 direction3 = (RB.position - Barrel.position).normalized;
+            
+            Vector3 direction2 = (center - RB.position).normalized;
+            
+
+            //RB.AddForce(direction.normalized * attractionForce/5 /* Time.deltaTime*/, ForceMode.VelocityChange);
+            //RB.AddForce(direction2.normalized * (15*attractionForce)  /* Time.deltaTime*/, ForceMode.VelocityChange);
+            RB.MovePosition(RB.position + direction2 * attractionForce);
+
+            if (_guntype == TypeofGun.Pull)
+            {
+                RB.MovePosition(RB.position + direction * attractionForce/5);
+            }
+
+            if (_guntype == TypeofGun.Push)
+            {
+
+                RB.MovePosition(RB.position + direction3 * attractionForce/5);
+            }
+
+            
+            
+                        
         }
     }
 
@@ -89,18 +138,14 @@ public class GravityGun : MonoBehaviour
         {
             if (rb != null)
             {
-                Collider[] objectsInRange = Physics.OverlapSphere(rb.position, 2f);
-                if (objectsInRange.Length == 0)
-                {
-                    rb.useGravity = true;
-                }
-                else
-                {
-                    stillAffected.Add(rb);
-                }
+              rb.useGravity = true;
+              affectedRigidbodies.Remove(rb);
+               
             }
         }
-        affectedRigidbodies = stillAffected;
+
+        currentdistance = _maxDistance;
+
     }
 
     public void Selected()
@@ -116,11 +161,13 @@ public class GravityGun : MonoBehaviour
     public void _Activated()
     {
         _activated = true;
+        _Light.SetActive(true);
     }
 
     public void _Deactivated()
     {
         _activated = false;
+        _Light.SetActive(false);
     }
     
 #if UNITY_EDITOR
@@ -128,7 +175,7 @@ public class GravityGun : MonoBehaviour
     {
        
             Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(HitPoint, 0.5f);
+            Gizmos.DrawWireSphere(HitPoint, radius);
 
     }
 #endif
