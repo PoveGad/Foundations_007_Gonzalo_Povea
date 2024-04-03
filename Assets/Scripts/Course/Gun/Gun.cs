@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.PlayerLoop;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Gun : MonoBehaviour
@@ -9,8 +10,10 @@ public class Gun : MonoBehaviour
     [SerializeField] private XRGrabInteractable _grabInteractable;
     [SerializeField] protected Transform _gunBarrel;
     [SerializeField] protected XRSocketInteractor _ammoSocket;
-
+    
     protected AmmoClip _ammoClip;
+    
+    
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -20,7 +23,15 @@ public class Gun : MonoBehaviour
         
         _ammoSocket.selectEntered.AddListener(AmmoAttached);
         _ammoSocket.selectExited.AddListener(AmmoDetached);
-        _grabInteractable.activated.AddListener(Fire);
+        _grabInteractable.deactivated.AddListener(Fire);
+        _grabInteractable.activated.AddListener(Simulate);
+    }
+
+   
+
+    protected virtual void Simulate(ActivateEventArgs arg0)
+    {
+        
     }
 
     protected virtual bool CanFire()
@@ -34,11 +45,12 @@ public class Gun : MonoBehaviour
         return true;
     }
 
-    protected virtual void Fire(ActivateEventArgs arg0)
+    protected virtual void Fire(DeactivateEventArgs arg0)
     {
         if(!CanFire()) return;
         _ammoClip.amount -= 1;
     }
+    
 
     protected virtual void AmmoDetached(SelectExitEventArgs arg0)
     {
@@ -67,8 +79,5 @@ public class Gun : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

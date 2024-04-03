@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,18 @@ public class ShockPistol : Gun
 {
     [SerializeField] private Renderer[] _gunRenderers;
     [SerializeField] private Material[] _ammoScreenMaterials;
+    [SerializeField] private Projection _projection;
+    
+    private bool startProyection = false;
+
+    private void Update()
+    {
+        if (startProyection)
+        {
+            if(!CanFire()) return;
+            _projection.SimulateTrajectory(_ammoClip.bulletObject, _gunBarrel, _gunBarrel.forward*_ammoClip.bulletSpeed);
+        }
+    }
 
     protected override void Start()
     {
@@ -30,7 +43,12 @@ public class ShockPistol : Gun
         UpdateShockPistolScreen();
     }
 
-    protected override void Fire(ActivateEventArgs arg0)
+    protected override void Simulate(ActivateEventArgs arg0)
+    {
+        startProyection = true;
+    }
+
+    protected override void Fire(DeactivateEventArgs arg0)
     {
         if(!CanFire()) return;
         base.Fire(arg0);
@@ -38,7 +56,8 @@ public class ShockPistol : Gun
         var bullet = Instantiate(_ammoClip.bulletObject, _gunBarrel.position, Quaternion.identity)
             .GetComponent<Rigidbody>();
         bullet.AddForce(_gunBarrel.forward*_ammoClip.bulletSpeed, ForceMode.Impulse);
-        Destroy(bullet, 6f);
+        Destroy(bullet, 4f);
+        startProyection = false;
     }
 
 
