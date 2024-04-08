@@ -17,7 +17,7 @@ public class HandedNess : MonoBehaviour
     [SerializeField] private GameObject[] leftHandedObjects;
     [SerializeField] private GameObject[] rightHandedObjects;
 
-    private void Awake()
+    private void Start()
     {
         handed = _GameManager._handedness;
         if (handed == Handed.Left)

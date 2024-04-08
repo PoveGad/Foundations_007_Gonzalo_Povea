@@ -9,6 +9,7 @@ public class XRHandAnimator : MonoBehaviour
 {
     [SerializeField] private ActionBasedController _controller;
     [SerializeField] private Animator _animator;
+    [SerializeField] private MenuManager _menuManager;
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class XRHandAnimator : MonoBehaviour
 
     private void Fist(InputAction.CallbackContext obj)
     {
-        _animator.SetBool("Fist", true);
+      if(!_menuManager.gameObject.activeSelf)  _animator.SetBool("Fist", true);
     }
 
     private void PointReleased(InputAction.CallbackContext obj)

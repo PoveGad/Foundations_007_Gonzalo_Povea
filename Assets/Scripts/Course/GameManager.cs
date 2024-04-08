@@ -40,7 +40,11 @@ public class GameManager : MonoBehaviour
     private Color _initialSkyBoxColor;
     private float _initialSkyBoxAtmosphereThickness;
     private float _initialSkyBoxExposure;
-    
+
+    private void Awake(){
+        _handedness = (Handed)PlayerPrefs.GetInt("handedness");
+    }
+
     void Start()
     {
         EnemyController[] enemies = FindObjectsOfType<EnemyController>();
@@ -169,6 +173,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -189,5 +198,21 @@ public class GameManager : MonoBehaviour
             
         }
         _canvasGroup.alpha = _fadeLevel;
+    }
+
+    public void ToggleDominantHand()
+    {
+        if (_handedness == Handed.Right)
+        {
+            _handedness = Handed.Left;
+        }
+        else
+        {
+            _handedness = Handed.Right;
+        }
+        PlayerPrefs.SetInt("handedness", (int)_handedness);
+        PlayerPrefs.Save();
+        RestartScene();
+        
     }
 }
