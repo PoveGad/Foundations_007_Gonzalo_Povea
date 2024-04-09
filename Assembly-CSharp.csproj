@@ -54,6 +54,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Assigment\Week7\EdgeAttached.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week1\Teleport.cs" />
+     <Compile Include="Assets\Scripts\Course\UI\MenuInput.cs" />
      <Compile Include="Assets\Scripts\Course\Hands\XrHandHider.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week2\TriggerIt.cs" />
      <Compile Include="Assets\Scripts\Course\Door\DoorKeyCardTrigger.cs" />
@@ -63,7 +64,9 @@
      <Compile Include="Assets\Scripts\Course\XR\XrMinimapRotator.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\Creature.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week4\RobotExplotion.cs" />
+     <Compile Include="Assets\Scripts\Assigment\Week8\DebugSandboxManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week2\FallingCube.cs" />
+     <Compile Include="Assets\Scripts\Course\UI\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week4\RobotExplotionTrigger.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week7\GravityGun.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week5\ResetGame.cs" />
@@ -73,6 +76,7 @@
      <Compile Include="Assets\Scripts\Assigment\Week6\ManagerWeek6.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week5\LaunchProjectile.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week5\FallDetectionAssigment.cs" />
+     <Compile Include="Assets\Scripts\Course\XR\XRCustomTeleportationProvider.cs" />
      <Compile Include="Assets\Scripts\Course\XR\XRTagLimitedSocketInteractor.cs" />
      <Compile Include="Assets\Scripts\Course\Hands\XRHandAnimator.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week7\Projection.cs" />
@@ -92,6 +96,7 @@
      <Compile Include="Assets\Scripts\Course\Player\FallDetection.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week5\TinCanToss.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week6\StartFireOrStopFire.cs" />
+     <Compile Include="Assets\Scripts\Course\UI\VolumeSlider.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week6\ScreenManager.cs" />
      <Compile Include="Assets\Scripts\Course\Bullet.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week5\CenterTarget.cs" />
@@ -111,6 +116,7 @@
      <Compile Include="Assets\Scripts\Assigment\Week2\TRiggerit_OnlyLog.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week4\KeyIdentificator.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\SoundEmitter.cs" />
+     <Compile Include="Assets\Scripts\Course\XR\SmoothTeleportation.cs" />
      <Compile Include="Assets\Prefabs\CoursePrefabs\Simple Water Shader\Resources\WaterReflection.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week6\Flammable.cs" />
      <Compile Include="Assets\Scripts\Course\Player\Grab.cs" />
@@ -118,11 +124,6 @@
      <Compile Include="Assets\Models\Assigment\GravityGun\ReadMe.cs" />
      <Compile Include="Assets\Scripts\Assigment\Week3\GoalTrigger.cs" />
      <Compile Include="Assets\Scripts\Course\Door\DoorTrigger.cs" />
-     <Compile Include="Assets\Scripts\Course\UI\MenuManager.cs" />
-     <Compile Include="Assets\Scripts\Course\UI\MenuInput.cs" />
-     <Compile Include="Assets\Scripts\Course\UI\VolumeSlider.cs" />
-     <Compile Include="Assets\Scripts\Course\XR\SmoothTeleportation.cs" />
-     <Compile Include="Assets\Scripts\Course\XR\XRCustomTeleportationProvider.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
