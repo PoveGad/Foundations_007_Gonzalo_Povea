@@ -127,6 +127,7 @@
      <Compile Include="Assets\Scripts\Course\Door\DoorTrigger.cs" />
      <Compile Include="Assets\ActivateShip.cs" />
      <Compile Include="Assets\Rotation.cs" />
+     <Compile Include="Assets\box_manager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
