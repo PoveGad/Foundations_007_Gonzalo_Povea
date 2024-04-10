@@ -16,6 +16,7 @@ TagManager:
   - Ammo
   - Axe
   - Edge
+  - Hand
   layers:
   - Default
   - TransparentFX
